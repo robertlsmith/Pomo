@@ -1,13 +1,14 @@
 import { useState } from 'react'
 import './App.css'
+import Pomodoro from './components/Pomodoro'
 
 function App() {
-  const [count, setCount] = useState(0)
+  // const [count, setCount] = useState(0)
 
   return (
     <>
       <div>
-        <h1>Hello world!</h1>
+        <Pomodoro />
       </div>
     </>
   )

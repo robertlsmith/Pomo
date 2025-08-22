@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+:root {
+  --pomodoro-bg: #14453D;
+  --pomodoro-text: #D9FFF4;
+  --pomodoro-primary: #43C59E;
+  --pomodoro-secondary: #3D7068;
+  --pomodoro-reset-btn: #D95A5A;
+}
+
+.pomodoro-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    /* margin-top: 10rem; */
+}
+
+.button-group {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;;
+}
+
+.btn {
+    border-style: solid;
+    border-width: 1px;
+    background-color: transparent;
+    border-color: var(--pomodoro-primary);
+    color: var(--pomodoro-text);
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--pomodoro-primary);
+}
+
+.reset-btn {
+    border-style: solid;
+    border-width: 1px;
+    background-color: transparent;
+    border-color: var(--pomodoro-primary);
+    color: var(--pomodoro-text);
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
+
+.reset-btn:hover {
+    background-color: var(--pomodoro-reset-btn);
+    color: #fff;
+    border-color: var(--pomodoro-reset-btn);
+}
